@@ -19,16 +19,15 @@
 ];*/
 
 document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.getElementById('navbar');
     // Store pages in an array
     const pages = [
-        { name: 'Home', link: 'index.html' },
+        { name: 'Home', link: '/index.html' },
         { name: 'About', link: '/pages/about.html' },
-        { name: 'Services', link: 'services.html' },
-        { name: 'Contact', link: 'contact.html' }
+        { name: 'Services', link: '/pages/services.html' },
+        { name: 'Contact', link: '/pages/contact.html' },
+        { name: 'Design', link: '/pages/design.html'}
     ];
-
-    // Get the navbar element from the DOM
-    const navbar = document.getElementById('navbar');
 
     // Create a <ul> element for the navbar
     const navList = document.createElement('ul');
