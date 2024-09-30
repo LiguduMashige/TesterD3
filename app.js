@@ -1,37 +1,54 @@
-const navItens = [
+//const root = "/TESTERD3";
+
+/*const navItens = [
     {
-        name: "Home", href: "./pages/index.html"
+        name: "Home", href: `${root}/index,html`
     },
     {
-        name: "About", href: "./pages/about.html"
+        name: "About", href: `${root}/pages/about.html`
     },
     {
-        name: "Services", href: "./pages/services.html"
+        name: "Services", href: `${root}/pages/services.html`
     },
     {
-        name: "Design", href: "./pages/design.html"
+        name: "Design", href: `${root}/pages/design.html`
     },
     {
-        name: "Contact", href: "./pages/contact.html"
+        name: "Contact", href: `${root}/pages/contact.html`
     }
-];
+];*/
 
-function createNavBar() {
-    // Get the navbar element
-    const navBar = document.getElementById('navbar');
+document.addEventListener('DOMContentLoaded', () => {
+    // Store pages in an array
+    const pages = [
+        { name: 'Home', link: 'index.html' },
+        { name: 'About', link: './pages/about.html' },
+        { name: 'Services', link: './pages/services.html' },
+        { name: 'Contact', link: '.pages/contact.html' }
+    ];
 
-    // Iterate over the navItems array to create links
-    navItems.forEach(item => {
-        // Create an anchor (a) element
+    // Get the navbar element from the DOM
+    const navbar = document.getElementById('navbar');
+
+    // Create a <ul> element for the navbar
+    const navList = document.createElement('ul');
+
+    // Loop through the pages array and create a list item for each page
+    pages.forEach(page => {
+        const listItem = document.createElement('li');
         const link = document.createElement('a');
 
-        // Set the href attribute and the text content
-        link.href = item.href;
-        link.textContent = item.name;
+        // Set the link href and text content
+        link.href = page.link;
+        link.textContent = page.name;
 
-        // Append the link to the nav bar
-        navBar.appendChild(link);
+        // Append the link to the list item
+        listItem.appendChild(link);
+
+        // Append the list item to the nav list
+        navList.appendChild(listItem);
     });
-}
 
-createNavBar();
+    // Append the navigation list to the navbar
+    navbar.appendChild(navList);
+});
