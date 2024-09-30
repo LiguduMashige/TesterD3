@@ -1,0 +1,39 @@
+nav {
+    background-color: #333;  /* Dark background for the nav bar */
+    overflow: hidden;        /* Ensure proper layout for floating elements */
+    padding: 10px 0;         /* Some padding for spacing */
+    text-align: center;      /* Center the nav items */
+}
+
+/* Style for the individual links */
+nav a {
+    display: inline-block;   /* Makes the links behave like buttons */
+    color: white;            /* White text color */
+    text-align: center;      /* Center text within the links */
+    padding: 14px 20px;      /* Padding around each link */
+    text-decoration: none;   /* Remove underlines */
+    font-size: 18px;         /* Adjust font size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin: 0 10px;          /* Add spacing between links */
+}
+
+/* Hover effect for the links */
+nav a:hover {
+    background-color: #ddd;  /* Light background on hover */
+    color: black;            /* Change text color on hover */
+}
+
+/* Active/current page link styling */
+nav a.active {
+    background-color: #4CAF50; /* Highlight the active link */
+    color: white;
+}
+
+/* Styling for smaller screens (responsive) */
+@media (max-width: 600px) {
+    nav a {
+        display: block;     /* Stack links vertically on small screens */
+        margin: 10px 0;     /* Add spacing between vertically stacked links */
+        padding: 10px;      /* Adjust padding for smaller screens */
+    }
+}
