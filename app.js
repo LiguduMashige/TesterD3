@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Store pages in an array
     const pages = [
         { name: 'Home', link: 'index.html' },
-        { name: 'About', link: './pages/about.html' },
-        { name: 'Services', link: './pages/services.html' },
-        { name: 'Contact', link: '.pages/contact.html' }
+        { name: 'About', link: '/pages/about.html' },
+        { name: 'Services', link: 'services.html' },
+        { name: 'Contact', link: 'contact.html' }
     ];
 
     // Get the navbar element from the DOM
