@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    let envelope = $("#envelope");
+    let envelope = $("#envelope"); 
     let btn_open = $("#open");
     let btn_reset = $("#reset");
 
@@ -22,4 +22,10 @@ $(document).ready(function() {
         envelope.addClass("close")
             .removeClass("open");
     }
+});
+ 
+$(document).ready(function() {
+    $("#yes-button, #yes-again-button").click(function() {
+        $("#yay-section").fadeIn();
+    });
 });

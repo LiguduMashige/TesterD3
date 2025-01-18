@@ -235,3 +235,45 @@ body {
     font-size: 70px;
     margin: 150px;
 }
+
+.valentine {
+    font-size: 2rem;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff85c5;
+}
+
+.image-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.yay-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.yay-text {
+    font-size: 1.5rem;
+    color: #333;
+}
