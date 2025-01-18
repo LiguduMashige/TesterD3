@@ -242,6 +242,15 @@ body {
     margin-bottom: 20px;
 }
 
+.scroll{
+    font-size: 1.5rem;
+    color: #333
+}
+
+.scroll{
+    text-align: center;
+}
+
 .button-container {
     margin-top: 20px;
     text-align: center;
