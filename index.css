@@ -244,13 +244,36 @@ body {
 
 .scroll{
     font-size: 1.5rem;
-    color: #333
+    color: #da0a0a
 }
 
 .scroll{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.sike {
+    text-align: center;
+    color: #d00000;
+    font-size: 1.5rem; /* Base size, scalable across devices */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto; /* Centers the element in its container */
+    max-width: 90%; /* Restricts the width for smaller devices */
+    word-wrap: break-word; /* Ensures long text breaks properly */
+}
+
+/* Optional: Media query for smaller devices */
+@media (max-width: 768px) {
+    .sike {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .sike {
+        font-size: 1rem; /* Further adjust for very small screens */
+    }
+}
 .button-container {
     margin-top: 20px;
     text-align: center;
