@@ -37,3 +37,14 @@ nav a.active {
         padding: 10px;      /* Adjust padding for smaller screens */
     }
 }
+body {
+    font-family: Arial, sans-serif;
+}
+.map path {
+    stroke: #000;
+    stroke-width: 0.5px;
+    fill: #ccc;
+}
+.map path:hover {
+    fill: #f00;
+}
