@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NYC Borough Map with D3.js</title>
-    <script src="https://d3js.org/d3.v6.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head> 
+    <link href="index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Valentines</title>
+</head>
 <body>
-    <header>
-        <nav id="navbar"></nav>
-    </header>
-
-    <div id="content">
-        <h1>NYC Boroughs Map with Zoom</h1>
-        <div id="map"></div>
-        <p>This is the main content of the Home Page</p>
+    <div class="envelope-wrapper">
+        <div id="envelope" class="close">
+            <div class="front flap"></div>
+            <div class="front pocket"></div>
+            <div class="letter">
+                <p class="words line1">Hello Pineapple</p>
+                <p class="words line2">If you were an API, I'd definitely want to integrate with you</p>
+                <p class="words line3">Love,</p>
+                <p class="words line4">Ligudu xo </p>
+            </div>
+            <div class="hearts">
+                <div class="heart a1"></div>
+                <div class="heart a2"></div>
+                <div class="heart a3"></div>
+            </div>
+        </div>
     </div>
-    
-    <script src="app.js"></script>
+    <div class="reset">
+        <button id="open">Open</button>
+        <button id="reset">Reset</button>
+    </div>
+    <h1 class="valentine">Happy Valentine's Day!</h1>
+    <script src="index.js"></script>
 </body>
 </html>
