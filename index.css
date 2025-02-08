@@ -238,7 +238,7 @@ body {
 
 .valentine {
     font-size: 2rem;
-    color: #ff69b4;
+    color: maroon;
     margin-bottom: 20px;
 }
 
@@ -300,8 +300,8 @@ button:hover {
 }
 
 .yay-image {
-    width: 150px;
-    height: 150px;
+    width: 400px;
+    height: 250px;
     margin-bottom: 10px;
 }
 
